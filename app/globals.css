@@ -1,0 +1,42 @@
+:root {
+  --border: rgb(255 255 255 / 40%);
+  --foreground: rgb(255 255 255 / 10%);
+  --radius: 0.875rem;
+  --text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  color: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+input {
+  background-color: var(--foreground);
+
+  &::placeholder {
+    color: rgb(255 255 255 / 60%);
+  }
+
+  &:focus {
+    border-color: var(--text);
+    outline: none;
+  }
+}
+
+button {
+  background-color: var(--text);
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+}

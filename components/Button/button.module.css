@@ -1,0 +1,18 @@
+.outline {
+  background-color: transparent;
+  color: inherit;
+
+  &:hover {
+    background: rgb(255 255 255 / 20%);
+  }
+}
+
+.sm {
+  font-size: 0.625rem;
+  padding: 0.5rem 1rem;
+}
+
+.lg {
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+}

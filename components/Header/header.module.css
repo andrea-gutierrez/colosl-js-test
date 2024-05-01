@@ -1,0 +1,25 @@
+.header {
+  align-items: center;
+  background-color: var(--foreground);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+}
+
+.logo {
+  align-items: center;
+  border: 2px solid var(--text);
+  border-radius: 100%;
+  color: inherit;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 2rem;
+  justify-content: center;
+  margin-right: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 2rem;
+}

@@ -1,0 +1,13 @@
+.avatar {
+  background-color: var(--text);
+  border: 1px solid var(--text);
+  border-radius: 50%;
+  color: #000;
+  display: grid;
+  font-size: 0.75rem;
+  font-weight: 700;
+  height: 2.5rem;
+  place-content: center center;
+  text-transform: uppercase;
+  width: 2.5rem;
+}

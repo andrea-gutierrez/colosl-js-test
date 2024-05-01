@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  min-height: 100vh;
+}
+
+.intro {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+}
