@@ -16,7 +16,7 @@ export const ContactsTable: FC<ContactsTableProps> = ({ items }) => {
     setLocalItems([...localItems, randomContact()]);
   };
 
-  const removeItem = () => setLocalItems([]);
+  const removeItem = (email: string): void => setLocalItems(list => list.filter(item => item.email === email));
 
   return (
     <div className={styles.wrapper}>
@@ -46,7 +46,7 @@ export const ContactsTable: FC<ContactsTableProps> = ({ items }) => {
                 <td>{item.email}</td>
                 <td>{item.phoneNumber}</td>
                 <td>
-                  <Button size="sm" outline onClick={removeItem}>
+                  <Button size="sm" outline onClick={() => removeItem(item.email)}>
                     Remove
                   </Button>
                 </td>
