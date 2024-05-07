@@ -11,14 +11,15 @@ interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  size,
+  size = '',
   outline,
   ...rest
 }) => (
   <button
     {...rest}
     className={cn(size && styles[size], {
-      [styles.outline]: outline,
+      'outline': outline,
+      [size]: size !== undefined
     })}
   >
     {children}
