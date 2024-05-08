@@ -9,11 +9,12 @@ export interface Contact {
 export const randomContact = (): Contact => {
   const name = getName();
   const auCountryCode = '+61';
+  const phoneNumber = `${auCountryCode}${faker.string.numeric({length: 9})}`;
 
   return {
     name,
     email: getEmail(name),
-    phoneNumber: `${auCountryCode}${Math.random().toString().slice(2,11)}`,
+    phoneNumber: phoneNumber,
   };
 };
 
