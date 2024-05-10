@@ -16,7 +16,9 @@ export const ContactsTable: FC<ContactsTableProps> = ({ items }) => {
     setLocalItems([...localItems, randomContact()]);
   };
 
-  const removeItem = (email: string): void => setLocalItems(list => list.filter(item => item.email === email));
+  const removeItem = (email: string): void => {
+    setLocalItems(list => list.filter(item => item.email !== email));
+  }
 
   return (
     <div className={styles.wrapper}>
